@@ -16,5 +16,5 @@ counts = com.value_counts(sort=False)
 print(counts)
 
 
-# data.plot(legend=False)
-# plt.savefig('test.png')
+#data.plot(legend=False)
+#plt.savefig('test.png')
