@@ -6,7 +6,7 @@ from descartes import PolygonPatch
 import json as simplejson
 import numpy as np
 
-data = pandas.read_csv("pub/accidents.csv",na_values='9999')
+data = pandas.read_csv("data/accidents.csv",na_values='9999')
 # data = pandas.read_csv("vehicules.csv",dtype=object)
 com = data['com']
 
