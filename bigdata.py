@@ -18,13 +18,19 @@ insee_df.set_index('code_comm')
 
 result = pandas.concat((insee_df, accid_df), axis=1)
 result['accidents'].fillna(0, inplace=True)
-result = result.sort('insee_com', ascending=True)
 
 dept_df = result.groupby('code_dept').sum()
-result.set_index('code_dept')
+dept_df = dept_df.drop('code_comm', 1)
 
-result = pandas.concat((result, dept_df), axis=1)
+# for x in range(1,97):
+# 	result.loc[result.code_dept == x, 'code_dept']
+  # result.accidents[result.code_dept == x] = dept_df.accidents[dept_df.code_dept == x]
+
+# result = pandas.merge(result, dept_df, how='right')
+
+result = result.sort('accidents', ascending=False)
 print(result)
+# print(dept_df)
 # result.to_csv('test.csv')
 
 # data = pandas.read_csv('test.csv')
