@@ -38,4 +38,4 @@ concatened = pd.concat((insee_df, counts), axis=1)
 
 
 concatened.to_csv('concat.csv')
-print(concatened.describe)
+print(concatened.describe())
