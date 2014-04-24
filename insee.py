@@ -15,12 +15,11 @@ accid_df = read_csv(accid_data, sep=",")
 
 # selecting columns
 #insee_df = DataFrame(data=insee_df,  columns=['code_comm', 'insee_com', 'nom_comm', 'postal_code', 'nom_dept', 'nom_region', 'geo_shape', 'code_dept'])
-insee_df = DataFrame(data=insee_df,  columns=['code_comm', 'insee_com', 'nom_comm'])
+insee_df = DataFrame(data=insee_df,  columns=['code_comm', 'nom_comm'])
 insee_df.set_index('code_comm')
 
 accid_df = DataFrame(data=accid_df,  columns=['numac', 'lum', 'agg', 'int', 'atm', 'col', 'adr', 'dep', 'code_comm', 'gps', 'lat', 'long', 'catr', 'voie', 'v1', 'v2', 'infra', 'situ', 'circ', 'nbv', 'vosp', 'prof', 'plan', 'ttue', 'tbg', 'tbl', 'tindm', 'numero', 'libellevoie', 'grav'])
 #accid_df = DataFrame(data=accid_df,  columns=['numac', 'agg', 'atm', 'col', 'adr', 'dep', 'code_comm', 'lat', 'long'])
-
 
 code_comm = accid_df['code_comm']
 ttue = accid_df['ttue']
@@ -33,10 +32,11 @@ comm_count = DataFrame(data=comm_count)
 
 comm_count.columns = ['nbr_acc']
 insee_df.set_index('code_comm')
+
 # concat DataFrames
 concatened = pd.concat((insee_df, comm_count), axis=1)
 
 concatened.fillna(0)
 
-concatened.to_csv('ok.csv')
+concatened.to_csv('data/accidents_localised.csv')
 print(concatened.describe())
