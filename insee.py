@@ -31,7 +31,14 @@ counts.astype(int)
 
 counts = DataFrame(data=counts)
 # merging DataFrames
+<<<<<<< HEAD
 #merged = merge(insee_df, counts,  how='outer', sort=True).fillna(0)
 concatened = pd.concat((insee_df, counts), axis=1)
 print(concatened.head)
 print(concatened.tail)
+=======
+merged = pd.merge(accid_df, insee_df, on='code_comm', how='outer', sort=True)
+
+merged.to_csv('lol.csv')
+
+>>>>>>> d33d16041d6cc65737f62a0ecda0f0fbe0505778
