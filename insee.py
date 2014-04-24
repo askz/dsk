@@ -34,9 +34,13 @@ comm_count.columns = ['nbr_acc']
 insee_df.set_index('code_comm')
 
 # concat DataFrames
-concatened = pd.concat((insee_df, comm_count), axis=1)
+export = pd.concat((insee_df, comm_count), axis=1)
 
-concatened = concatened.fillna(0)
+export = export.fillna(0)
+export = export.dropna(0)
+print(export.describe())
 
-concatened.to_csv('data/accidents_localised.csv')
-print(concatened.describe())
+export.to_csv('data/accidents_localised.csv', sep=';')
+export.to_json('data/accidents_localised.json')
+
+
