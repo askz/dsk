@@ -1,8 +1,13 @@
 <?php
-$m = new MongoClient();
-$db = $m->selectDB('test');
+error_reporting(E_ALL);
 
-$collection = $db->test->accidents;
- $results = $collection->find();
+$m = new Mongo('localhost');
 
- print_r($results);
+$collection = $m->accidents;
+
+$cursor = $collection->find();
+
+ foreach ($cursor as $obj)
+ {
+ 	var_dump($obj);
+ }
