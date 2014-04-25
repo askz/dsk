@@ -8,14 +8,14 @@ import numpy as np
 import os
 
 def as_int(x):
-	try:
-		return int(x)
-	except:
-		return x
+  try:
+    return int(x)
+  except:
+    return x
 
 def test(plop, x):
-	for y in indexes:
-		result.loc[y, 'accidents'] = dept_df.xs(x)['accidents']
+  for y in indexes:
+    result.loc[y, 'accidents'] = dept_df.xs(x)['accidents']
 
 data = pandas.read_csv("data/accidents.csv",sep=',')
 accid_df = pandas.DataFrame({'code_comm' : data['code_comm'], 'accidents' : 1})
@@ -33,15 +33,15 @@ dept_df = result.groupby('code_dept').sum()
 dept_df = dept_df.drop('code_comm', 1)
 
 for x in range(1,98):
-	indexes = np.where(result['code_dept']==x)[0]
-	test(indexes, x)
+  indexes = np.where(result['code_dept']==x)[0]
+  test(indexes, x)
 
 # result = pandas.merge(result, dept_df, how='right', on='code_dept')
-
-result = result.sort('accidents', ascending=True)
+result['accidents'] = result['accidents'] / result['accidents'].max() * 100
+# result = result.sort('accidents', ascending=True)
 print(result)
 # dept_df = dept_df.sort('accidents', ascending=True)
-print(dept_df)
+# print(dept_df)
 # result.to_csv('test.csv')
 
 # data = pandas.read_csv('test.csv')
