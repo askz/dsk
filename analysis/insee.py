@@ -37,7 +37,7 @@ insee_df.set_index('code_comm')
 export = pd.concat((insee_df, comm_count), axis=1)
 
 export = export.fillna(0)
-export = export.dropna(0)
+export = export.dropna()
 print(export.describe())
 
 export.to_csv('data/accidents_localised.csv', sep=';')
