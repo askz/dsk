@@ -4,7 +4,7 @@ Les données qui ont été traitées sur ce site proviennent du site http://www.
 </div>
 		<div id="entete">
 			
-		    </div>
+		</div>
 		</div>
 
 
@@ -19,14 +19,14 @@ Les données qui ont été traitées sur ce site proviennent du site http://www.
 			<li>
 				<a href="">La carte</a>
 				<ul class="sousmenu">
-					<li><a href="">Département</a></li>
+					<li><a href="map.php">Département</a></li>
 				</ul>
 			</li>
 	
 			<li>
 				<a href="">A propos...</a>
 				<ul class="sousmenu">
-					<li><a href="">L'équipe</a></li>
+					<li><a href="team.php">L'équipe</a></li>
 			        <li><a href="">Notre projet</a></li>
 				</ul>
 			</li>
