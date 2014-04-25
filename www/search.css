@@ -1,7 +1,7 @@
 body,div,ul {margin: 0; padding: 0;}
 
 body{
-	background-color: #F5F5F5;
+	background-color: white;
 	font-family: Arial, sans-serif; font-size: 13px
 }
 
@@ -10,7 +10,10 @@ body{
 	height: 8px; 
 	padding: 7px;
 	background-color: gray; 
-	font-size: 11px;}
+	font-size: 11px;
+	width: 950px; 
+	margin: 0 auto;
+}
 
 #global
 {
@@ -20,11 +23,15 @@ body{
 
 #entete
 {
-	height: 150px;
+	height: 90px;
 	border-radius: 5px;
-	background: url('./logomaker.png') no-repeat;
+	background: url('./logo.jpg') no-repeat;
 	position: relative;
 	margin-bottom: 2px;
+	width: 950px; 
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: white;
 }
 
 #recherche
@@ -49,16 +56,18 @@ body{
 
 #blocmenu
 {
-        margin-bottom: 15px; 
+    margin-bottom: 15px; 
 	height: 36px;
 	background-color: black;
+	width: 950px; 
+	margin: 0 auto;
 }
 
 
 #menu
 {
 	background:  #F5F5F5;
-	width: 820px;
+	width: 680px;
 	height: 25px;
 	font-size:16px;
 	font-family:sans-serif,arial;
@@ -67,16 +76,16 @@ body{
 	padding: 0;
 	border: 0;
 	position: absolute;
-	top: 175px;
-	left: 120px;
+	top: 130px;
+	left: 350px;
 }
 
 #blocmenu img
 {
-	width: 40px;
-	height: 40px;
-	margin-left: 883px;
-	margin-top: 3px;
+	width: 120px;
+	height: 45px;
+	margin-left: 1080px;
+	margin-top: 0px;
 }
 
 #menu li
@@ -142,7 +151,7 @@ background-color: #003453;
 
 #banniere_image
 {
-	margin-top: 130px;
+	margin-top: 10px;
 	height: 310px;
 	border-radius: 5px;
 	background: url('./route.jpg') no-repeat;
@@ -200,16 +209,21 @@ img
 {
 	padding: 10px;
 	background-color: lightgray;
-	margin-top: 125px;
+	margin-top: 15px;
 	text-align: center;
-	
+	margin-bottom: 20px;
+	width: 950px; 
+	margin: 0 auto;
 }
 
-#pied
+#footer
 {
 	padding: 20px;
 	background-color: black;
 	color: white;
 	font-size: 0.9em;
-	margin-top: 15px;
+	margin-top: 50px;
+	width: 950px; 
+	margin: 0 auto;
+	text-align: center;
 }
