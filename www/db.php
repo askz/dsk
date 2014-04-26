@@ -1,5 +1,5 @@
 <?php
-<<<<<<< HEAD
+
 error_reporting(E_ALL);
 
 $m = new Mongo('localhost');
@@ -25,5 +25,4 @@ echo "lol";
  echo "</p>\n<p>commune : ". $obj['nom_comm'];
  echo "</p>\n<p>accidents : ". $obj['accidents'];
  echo "</p>";
->>>>>>> 42619df9f333cf12fe1847dd136561226aa7a894
  }
