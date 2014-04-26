@@ -61,13 +61,14 @@ body{
 	background-color: black;
 	width: 950px; 
 	margin: 0 auto;
+	list-style-type: none;
 }
 
 
 #menu
 {
 	background:  #F5F5F5;
-	width: 680px;
+	width: 680% auto;
 	height: 25px;
 	font-size:16px;
 	font-family:sans-serif,arial;

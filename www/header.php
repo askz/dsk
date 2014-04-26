@@ -10,7 +10,7 @@ Les données qui ont été traitées sur ce site proviennent du site http://www.
 
 
 	<div id="blocmenu">
-		   <li><a href="http://github.com/askz/dsk"><img src="github.png" alt="github" /></a></li>
+		   <a href="http://github.com/askz/dsk"><img src="github.png" alt="github" /></a>
 		<ul id="menu">
 			<li><a href="index.php">Accueil</a></li>
 			<li>

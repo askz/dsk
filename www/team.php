@@ -12,6 +12,8 @@
 			<?php include("header.php");?>
 			<div id="contenu">
 				<h2>Présentation de l'équipe</h2>
+				<br />
+				<br />
 			</div>
 		</div>
 		<?php include("footer.php");?>
