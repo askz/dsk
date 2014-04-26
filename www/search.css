@@ -41,7 +41,7 @@ body{
 {
 	height: 90px;
 	border-radius: 5px;
-	background: url('./logo.jpg') no-repeat;
+	background: url('./pictures/logo.jpg') no-repeat;
 	position: relative;
 	margin-bottom: 2px;
 	width: 950px; 
@@ -100,7 +100,7 @@ body{
 {
 	width: 120px;
 	height: 45px;
-	margin-left: 1080px;
+	margin-left: 760px;
 	margin-top: 0px;
 }
 
@@ -230,6 +230,23 @@ img
 	margin-bottom: 20px;
 	width: 950px; 
 	margin: 0 auto;
+}
+
+#result
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	position: relative;
+	width: 570px;
+	background-color: white;
+	box-shadow: 1px 3px 4px 3px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	color: black;
+	font-size: 0.9em;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 #footer
