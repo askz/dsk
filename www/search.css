@@ -246,7 +246,47 @@ img
 	color: black;
 	font-size: 0.9em;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
+}
+
+#stat
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	position: relative;
+	width: 900px;
+	background-color: white;
+	box-shadow: 1px 3px 4px 3px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	color: black;
+	font-size: 0.9em;
+	margin-left: 10px;
+	margin-top: 0px;
+}
+
+#team
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	position: relative;
+	width: 350px;
+	background-color: white;
+	box-shadow: 1px 3px 4px 3px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	color: black;
+	font-size: 0.9em;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#team img
+{
+	width: 90px;
+	height: 90px;
 }
 
 #footer
