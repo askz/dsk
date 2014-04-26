@@ -5,6 +5,22 @@ body{
 	font-family: Arial, sans-serif; font-size: 13px
 }
 
+#canvas_france 
+{
+	margin-right: 0px;
+	padding-right: 0px;
+	border-radius: 1px solid;
+	
+
+}
+
+#canvas_labels
+{
+	text-align: left;
+	display: inline;
+	max-width: 100px;
+}
+
 #info
 {
 	height: 8px; 
