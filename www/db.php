@@ -1,5 +1,21 @@
 <?php
+<<<<<<< HEAD
 ini_set('display_errors', '1');
+=======
+
+error_reporting(E_ALL);
+
+$m = new Mongo('localhost');
+
+$collection = $m->accidents;
+
+$cursor = $collection->find();
+
+ foreach ($cursor as $obj)
+ {
+ 	var_dump($obj);
+=======
+>>>>>>> 4c592bc6bd76f2bac944e8241e566e97a555b4e6
 $m = new Mongo('localhost');
 
 

@@ -13,7 +13,7 @@
 			<div id="banniere_image">
 
 					<div id="banniere_description">
-						Accidents de la route.. ATTENTION !!!
+						Accidents de la route en france depuis 6 ans. (2005-2011)
 					</div>
 
 					<div>
