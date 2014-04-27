@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '1');
 $m = new Mongo('localhost');
 
 
